@@ -11,7 +11,7 @@ $( document ).ready(function() {
 		initBannerVideoSize('.video-container video');
 			
 		$(window).on('resize', function() {
-			scaleVideoContainer();
+			// scaleVideoContainer();
 			scaleBannerVideoSize('.video-container .poster img');
 			scaleBannerVideoSize('.video-container .filter');
 			scaleBannerVideoSize('.video-container video');
@@ -24,9 +24,9 @@ $( document ).ready(function() {
 	
 	function scaleVideoContainer() {
 	
-		var height = $(window).height();
-		var unitHeight = parseInt(height) + 'px';
-		$('.homepage-hero-module').css('height',unitHeight);
+		// var height = $(window).height();
+		// var unitHeight = parseInt(height) + 'px';
+		// $('.homepage-hero-module').css('height',unitHeight);
 	
 	}
 	

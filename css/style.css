@@ -1,5 +1,6 @@
 body {
-    font-family: 'Lato', sans-serif;    
+    font-family: 'Lato', sans-serif; 
+    overflow-x: hidden;   
 }
 
 /******** Navigation  ***********/
@@ -15,7 +16,7 @@ body {
 }
 
 .navbar-brand img {
-    max-width: 100px;    
+    max-width: 150px;    
 }
 
 .navbar-toggle .icon-bar {
@@ -241,6 +242,25 @@ img.social {
     background: #536dfe;
 }
 
+
+
+/************** Timeline *************/
+.timeline {
+    max-width: 640px;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 480px;
+    }
+}
+
+@media (min-width: 768px) {
+    .timeline {
+        max-width: 640px;
+    }
+}
+
 /************** Jumbotron *************/
 .headline h1 {
     font-weight: 300;
@@ -251,6 +271,7 @@ img.social {
     border-right: none;
     border-left: none;
     position: relative;
+    height: 650px;
   }
   .no-video .video-container video,
   .touch .video-container video {
@@ -283,7 +304,7 @@ img.social {
   .video-container .title-container {
     z-index: 1000;
     position: absolute;
-    top: 35%;
+    top: 40%;
     width: 100%;
     text-align: center;
     color: #fff;
