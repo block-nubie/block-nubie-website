@@ -294,6 +294,8 @@ img.social {
     width: 100%;
     bottom: 0;
     position: absolute;
+    object-fit: cover;
+    object-position: center;
   }
   .video-container .filter {
     z-index: 100;
