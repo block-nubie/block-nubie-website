@@ -310,6 +310,7 @@ img.social {
     width: 100%;
     text-align: center;
     color: #fff;
+    padding: 10px;
   }
   .video-container .description .inner {
     font-size: 1em;
