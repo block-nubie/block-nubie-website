@@ -3,6 +3,23 @@ body {
     overflow-x: hidden;   
 }
 
+.cta {
+    margin-left: 5px;
+    min-width: 200px !important;
+    max-width: 200px !important;
+    
+}
+
+.cta-button {
+    border-radius: 20px;
+    border: 2px solid #536dfe;
+    color: #536dfe;
+    height: 35px;
+    -moz-box-shadow:    1px 1px 1px 1px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.15);
+    box-shadow:         1px 1px 1px 1px rgba(0,0,0,0.15);
+}
+
 /******** Navigation  ***********/
 .navbar {
     background: #ffffff;
@@ -52,6 +69,10 @@ img.social {
     margin-top: 10px !important;
 }
 
+.m-l-10 {
+    margin-left: 10px !important;
+}
+
 @media (min-width: 768px) {
     .container-fluid > .navbar-collapse, 
     .container-fluid > .navbar-header, 
@@ -83,6 +104,113 @@ img.social {
     font-weight: 200;
     font-size: 17px;
 }
+
+
+
+/************** Countdown **************/
+#countdown{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#countdown > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #8c9eff;
+	display: inline-block;
+}
+
+#countdown div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #536dfe;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+
+/************** Cards **************/
+.cards {
+    background: #536dfe;
+    color: white;
+    padding-bottom: 30px;      
+}
+
+.card {
+    margin-top: 30px;
+    background-color: #8c9eff;
+    min-height: 120px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.inverse {
+    background: white;
+}
+
+.cards h2 {
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cards h3 {
+    font-weight: 200;
+	text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.cards h3.inverse, .cards h4.inverse, .cards h5.inverse {
+    color: #536dfe;
+}
+
+.cards h4 {
+    font-weight: bold;
+	text-align: center;
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.cards h5 {
+    font-weight: 200;
+	text-align: center;
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.cards hr {
+    border-top: 1px solid rgba(83, 109, 254, 0.5); 
+}
+
+.cards p {
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.cards .card-image {
+    margin-top: 20px;
+    width: 40px;
+	height: 40px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
 
 /************** Graphic Panel **************/
 .graphic {
