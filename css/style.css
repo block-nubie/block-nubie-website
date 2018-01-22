@@ -108,6 +108,12 @@ img.social {
 
 
 /************** Countdown **************/
+.divider {
+    margin: 0;
+    color: #536dfe; 
+    background: #536dfe; 
+    border-top: 1px solid rgba(255, 255, 255, 0.5); 
+}
 #countdown{
 	font-family: sans-serif;
 	color: #fff;
