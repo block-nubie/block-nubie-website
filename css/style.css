@@ -73,6 +73,14 @@ img.social {
     margin-left: 10px !important;
 }
 
+.m-r-10 {
+    margin-right: 10px !important;
+}
+
+.m-r-20 {
+    margin-right: 20px !important;
+}
+
 @media (min-width: 768px) {
     .container-fluid > .navbar-collapse, 
     .container-fluid > .navbar-header, 
@@ -314,6 +322,65 @@ img.social {
 .economy img {
     width: 100%;
 }
+
+
+
+
+/************ Cap Table *************/
+.cap {
+    background: white;
+}
+
+.cap h2 {
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cap hr {
+    border-top: 1px solid rgba(83, 109, 254, 0.5); 
+}
+
+
+.cap table.cap-table {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cap thead > tr,
+.cap thead > tr > td {
+    text-align: center;
+    color: #536dfe;
+    font-weight: bold;
+    border-top: 1px solid #cfd8dc;
+    border-bottom: 1px solid #cfd8dc;
+}
+
+.cap tbody > tr > td {
+    text-align: center;
+    color: #263238;
+    border-top: 1px solid #cfd8dc;
+    border-bottom: 1px solid #cfd8dc;
+}
+
+.cap tbody > tr > td > span {
+    color: #78909c;
+    font-weight: bold;
+}
+
+.cap tbody > tr {
+    border-bottom: 1px solid #cfd8dc;
+}
+
+.cap td:first-of-type {
+    border-left: 1px solid #cfd8dc;
+}
+.cap td:last-of-type {
+    border-right: 1px solid #cfd8dc;
+}
+
+
 
 /************ Contact *************/
 .contact {
