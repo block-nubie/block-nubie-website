@@ -85,7 +85,7 @@
               </a>
             </li>
             <li>
-              <a href="documents/Blocknubie_Whitepaper_0.90.pdf" target="_blank" class="cta">
+              <a href="documents/Blocknubie_Whitepaper_0.90.pdf" target="_blank" class="cta whitepaper">
                 <button class="cta-button">Read our Whitepaper</button>
               </a>
             </li>
@@ -159,7 +159,7 @@
       </div>
       <div class="row no-margin">
         <div class="col-md-4 col-md-offset-4 col-xs-12 text-center m-t-20">
-          <a href="https://goo.gl/pQ45hS" target="_blank" class="cta">
+          <a href="https://goo.gl/pQ45hS" target="_blank" class="cta whitelist">
             <button class="cta-button large">Join the Whitelist</button>
           </a>
         </div>
@@ -607,7 +607,7 @@
 
       <div class="row no-margin">
         <div class="col-md-4 col-md-offset-4 col-xs-12 text-center m-t-10 m-b-20">
-          <a href="https://goo.gl/pQ45hS" target="_blank" class="cta">
+          <a href="https://goo.gl/pQ45hS" target="_blank" class="cta whitelist">
             <button class="cta-button large inverse">Join the Whitelist</button>
           </a>
         </div>
@@ -745,8 +745,25 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-110581197-1');
+
+    $('.whitelist').click(function(){
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Whitelist',
+        eventAction: 'click',
+        eventLabel: 'Private PreSale Campaign'
+      });
+    });
+
+    $('.whitepaper').click(function(){
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Whitepaper',
+        eventAction: 'download',
+        eventLabel: 'Private PreSale Campaign'
+      });
+    });
   </script>
 
   <script>
