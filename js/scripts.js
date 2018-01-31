@@ -3,6 +3,28 @@ $(document).ready(function () {
 	var deadline = new Date(Date.parse('02/28/2018'));
 	initializeClock('countdown', deadline);
 
+	$('.whitelist').click(function(){
+		dataLayer.push({'event': 'Whitelist Click'});
+  
+		ga('send', {
+		  hitType: 'event',
+		  eventCategory: 'Whitelist',
+		  eventAction: 'click',
+		  eventLabel: 'Private PreSale Campaign'
+		});
+	  });
+  
+	  $('.whitepaper').click(function(){
+		dataLayer.push({'event': 'Whitepaper Download'});
+  
+		ga('send', {
+		  hitType: 'event',
+		  eventCategory: 'Whitepaper',
+		  eventAction: 'download',
+		  eventLabel: 'Private PreSale Campaign'
+		});
+	  });
+
 });
 
 function getTimeRemaining(endtime) {
