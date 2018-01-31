@@ -17,6 +17,7 @@ body {
     -moz-box-shadow:    1px 1px 1px 1px rgba(0,0,0,0.15);
     -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.15);
     box-shadow:         1px 1px 1px 1px rgba(0,0,0,0.15);
+    background: white;
 }
 
 .cta-button.inverse {
@@ -353,6 +354,7 @@ img.social {
 /************ Cap Table *************/
 .cap {
     background: white;
+    overflow: hidden;
 }
 
 .cap h2 {
@@ -517,6 +519,7 @@ img.social {
   }
   .video-container .poster img {
     width: 100%;
+    height: 100%;
     bottom: 0;
     position: absolute;
     object-fit: cover;
@@ -527,11 +530,12 @@ img.social {
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
+    height: 100%;
   }
   .video-container .title-container {
     z-index: 1000;
     position: absolute;
-    top: 40%;
+    top: 35%;
     width: 100%;
     text-align: center;
     color: #fff;
