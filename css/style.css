@@ -202,34 +202,38 @@ img.social {
 }
 
 .cards h3 {
-    font-weight: 200;
+    font-weight: 400;
 	text-align: center;
     color: white;
     margin-top: 10px;
     margin-bottom: 0px;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .cards h3.inverse, .cards h4.inverse, .cards h5.inverse {
     color: #536dfe;
 }
 
+.cards h4.inverse {
+    margin-top: 2px;
+}
+
 .cards h4 {
     font-weight: bold;
 	text-align: center;
     color: white;
-    margin-top: 2px;
+    margin-top: 10px;
     margin-bottom: 5px;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .cards h5 {
-    font-weight: 200;
+    font-weight: 400;
 	text-align: center;
     color: white;
     margin-top: 2px;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .cards hr {
