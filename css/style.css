@@ -502,7 +502,7 @@ img.social {
     border-right: none;
     border-left: none;
     position: relative;
-    height: 650px;
+    height: 720px;
   }
   .no-video .video-container video,
   .touch .video-container video {
@@ -539,7 +539,7 @@ img.social {
   .video-container .title-container {
     z-index: 1000;
     position: absolute;
-    top: 35%;
+    top: 15%;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -569,4 +569,51 @@ img.social {
   }
   .video-container video.fillWidth {
     width: 100% ;
+  }
+
+  .circle {
+    stroke: #536dfe;
+    stroke-dasharray: 650;
+    stroke-dashoffset: 650;
+    -webkit-transition: all 0.5s ease-in-out;
+    opacity: 0.3;
+  }
+  
+  .play-button {
+    display: inline-block;
+    -webkit-transition: all 0.5s ease;
+  }
+  .play-button .triangle {
+    -webkit-transition: all 0.7s ease-in-out;
+    stroke-dasharray: 240;
+    stroke-dashoffset: 480;
+    stroke: #536dfe;
+    transform: translateY(0);
+  }
+  .play-button:hover .triangle {
+    stroke-dashoffset: 0;
+    opacity: 1;
+    stroke: #536dfe;
+    animation: nudge 0.7s ease-in-out;
+  }
+  @keyframes nudge {
+    0% {
+      transform: translateX(0);
+    }
+    30% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    70% {
+      transform: translateX(-2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .play-button:hover .circle {
+    stroke-dashoffset: 0;
+    opacity: 1;
   }

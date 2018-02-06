@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+	$("#myModal").on("hidden.bs.modal",function(){
+		$("#iframeYoutube").attr("src","#");
+	  })
+
 	var deadline = new Date(Date.parse('02/28/2018'));
 	initializeClock('countdown', deadline);
 
@@ -26,6 +30,13 @@ $(document).ready(function () {
 	  });
 
 });
+
+function changeVideo(vId){
+	var iframe=document.getElementById("iframeYoutube");
+	iframe.src="https://www.youtube.com/embed/"+vId;
+  
+	$("#myModal").modal("show");
+  }
 
 function getTimeRemaining(endtime) {
 	var t = Date.parse(endtime) - Date.parse(new Date());
