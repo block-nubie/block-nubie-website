@@ -90,6 +90,10 @@ img.social {
     margin-top: 20px !important;
 }
 
+.m-t-40 {
+    margin-top: 40px !important;
+}
+
 .m-b-20 {
     margin-bottom: 20px !important;
 }
@@ -119,7 +123,8 @@ img.social {
 .info {
     background: #536dfe; 
     color: white; 
-    padding-bottom: 30px;  
+    padding-bottom: 30px;
+    overflow-x: hidden;     
 }
 
 .info h2 {
@@ -224,7 +229,7 @@ img.social {
     color: white;
     margin-top: 10px;
     margin-bottom: 5px;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .cards h5 {
@@ -349,6 +354,28 @@ img.social {
 }
 
 .economy img {
+    width: 100%;
+}
+
+/************** Partners *************/
+
+.partners {
+    background: white;
+    color: #263238;
+    padding-bottom: 30px;      
+}
+
+.partners h2 {
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.partners hr {
+    border-top: 1px solid rgba(83, 109, 254, 0.5); 
+}
+
+.partners img {
     width: 100%;
 }
 
@@ -613,7 +640,7 @@ img.social {
       transform: translateX(0);
     }
   }
-  .play-button:hover .circle {
+.play-button:hover .circle {
     stroke-dashoffset: 0;
     opacity: 1;
-  }
+}
