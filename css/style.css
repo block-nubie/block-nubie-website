@@ -119,7 +119,8 @@ img.social {
 .info {
     background: #536dfe; 
     color: white; 
-    padding-bottom: 30px;  
+    padding-bottom: 30px;
+    overflow-x: hidden;     
 }
 
 .info h2 {
