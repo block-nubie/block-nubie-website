@@ -5,7 +5,6 @@ body {
 
 .cta {
     margin-left: 5px;
-    min-width: 200px !important;
     max-width: 200px !important;   
 }
 
@@ -61,6 +60,12 @@ img.social {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
     max-width: 50px;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 5px;
 }
 
 .navbar-nav>li>a:hover,
