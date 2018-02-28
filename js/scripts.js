@@ -1,42 +1,42 @@
 $(document).ready(function () {
 
-	$("#myModal").on("hidden.bs.modal",function(){
-		$("#iframeYoutube").attr("src","#");
-	  })
+	$("#myModal").on("hidden.bs.modal", function () {
+		$("#iframeYoutube").attr("src", "#");
+	})
 
-	var deadline = new Date(Date.parse('02/28/2018 21:00:00 Z'));
+	var deadline = new Date(Date.parse('02/27/2018 21:00:00 Z'));
 	initializeClock('countdown', deadline);
 
-	$('.whitelist').click(function(){
-		dataLayer.push({'event': 'Whitelist Click'});
-  
+	$('.whitelist').click(function () {
+		dataLayer.push({ 'event': 'Whitelist Click' });
+
 		ga('send', {
-		  hitType: 'event',
-		  eventCategory: 'Whitelist',
-		  eventAction: 'click',
-		  eventLabel: 'Private PreSale Campaign'
+			hitType: 'event',
+			eventCategory: 'Whitelist',
+			eventAction: 'click',
+			eventLabel: 'Private PreSale Campaign'
 		});
-	  });
-  
-	  $('.whitepaper').click(function(){
-		dataLayer.push({'event': 'Whitepaper Download'});
-  
+	});
+
+	$('.whitepaper').click(function () {
+		dataLayer.push({ 'event': 'Whitepaper Download' });
+
 		ga('send', {
-		  hitType: 'event',
-		  eventCategory: 'Whitepaper',
-		  eventAction: 'download',
-		  eventLabel: 'Private PreSale Campaign'
+			hitType: 'event',
+			eventCategory: 'Whitepaper',
+			eventAction: 'download',
+			eventLabel: 'Private PreSale Campaign'
 		});
-	  });
+	});
 
 });
 
-function changeVideo(vId){
-	var iframe=document.getElementById("iframeYoutube");
-	iframe.src="https://www.youtube.com/embed/"+vId;
-  
+function changeVideo(vId) {
+	var iframe = document.getElementById("iframeYoutube");
+	iframe.src = "https://www.youtube.com/embed/" + vId;
+
 	$("#myModal").modal("show");
-  }
+}
 
 function getTimeRemaining(endtime) {
 	var t = Date.parse(endtime) - Date.parse(new Date());
@@ -63,10 +63,18 @@ function initializeClock(id, endtime) {
 	function updateClock() {
 		var t = getTimeRemaining(endtime);
 
-		daysSpan.innerHTML = t.days;
-		hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-		minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-		secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+		if (t.seconds < 0) {
+			daysSpan.innerHTML = '0';
+			hoursSpan.innerHTML = '0';
+			minutesSpan.innerHTML = '0';
+			secondsSpan.innerHTML = '0';
+		}
+		else {
+			daysSpan.innerHTML = t.days;
+			hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+			minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+			secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+		}
 
 		if (t.total <= 0) {
 			clearInterval(timeinterval);
