@@ -4,7 +4,7 @@ $(document).ready(function () {
 		$("#iframeYoutube").attr("src", "#");
 	})
 
-	var deadline = new Date(Date.parse('02/27/2018 21:00:00 Z'));
+	var deadline = new Date(Date.parse('04/16/2018 09:00:00 Z'));
 	initializeClock('countdown', deadline);
 
 	$('.whitelist').click(function () {
@@ -14,7 +14,7 @@ $(document).ready(function () {
 			hitType: 'event',
 			eventCategory: 'Whitelist',
 			eventAction: 'click',
-			eventLabel: 'Private PreSale Campaign'
+			eventLabel: 'Public PreSale Campaign'
 		});
 	});
 
@@ -25,7 +25,7 @@ $(document).ready(function () {
 			hitType: 'event',
 			eventCategory: 'Whitepaper',
 			eventAction: 'download',
-			eventLabel: 'Private PreSale Campaign'
+			eventLabel: 'Public PreSale Campaign'
 		});
 	});
 
