@@ -4,7 +4,7 @@ $(document).ready(function () {
 		$("#iframeYoutube").attr("src", "#");
 	})
 
-	var deadline = new Date(Date.parse('04/16/2018 09:00:00 Z'));
+	var deadline = new Date(Date.parse('04/16/2018'));
 	initializeClock('countdown', deadline);
 
 	$('.whitelist').click(function () {
@@ -63,18 +63,11 @@ function initializeClock(id, endtime) {
 	function updateClock() {
 		var t = getTimeRemaining(endtime);
 
-		if (t.seconds < 0) {
-			daysSpan.innerHTML = '0';
-			hoursSpan.innerHTML = '0';
-			minutesSpan.innerHTML = '0';
-			secondsSpan.innerHTML = '0';
-		}
-		else {
-			daysSpan.innerHTML = t.days;
-			hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-			minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-			secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-		}
+
+		daysSpan.innerHTML = t.days;
+		hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+		minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+		secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
 		if (t.total <= 0) {
 			clearInterval(timeinterval);
