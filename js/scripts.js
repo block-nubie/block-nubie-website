@@ -4,7 +4,7 @@ $(document).ready(function () {
 		$("#iframeYoutube").attr("src", "#");
 	})
 
-	var deadline = new Date(Date.parse('04/16/2018'));
+	var deadline = new Date(Date.parse('05/14/2018'));
 	initializeClock('countdown', deadline);
 
 	$('.whitelist').click(function () {
