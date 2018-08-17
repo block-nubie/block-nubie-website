@@ -1,11 +1,11 @@
 body {
-    font-family: 'Lato', sans-serif; 
-    overflow-x: hidden;   
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 .cta {
     margin-left: 5px;
-    max-width: 200px !important;   
+    max-width: 200px !important;
 }
 
 .cta-button {
@@ -13,9 +13,9 @@ body {
     border: 2px solid #536dfe;
     color: #536dfe;
     height: 35px;
-    -moz-box-shadow:    1px 1px 1px 1px rgba(0,0,0,0.15);
-    -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.15);
-    box-shadow:         1px 1px 1px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
     background: white;
 }
 
@@ -33,6 +33,7 @@ body {
 }
 
 /******** Navigation  ***********/
+
 .navbar {
     background: #ffffff;
     color: #536dfe;
@@ -45,11 +46,11 @@ body {
 }
 
 .navbar-brand img {
-    max-width: 150px;    
+    max-width: 150px;
 }
 
 .navbar-toggle .icon-bar {
-    background: #536dfe;    
+    background: #536dfe;
 }
 
 img.social {
@@ -73,8 +74,8 @@ img.social {
     background: white;
 }
 
-
 /********* Structural ***********/
+
 .no-padding {
     padding: 0 !important;
 }
@@ -120,81 +121,82 @@ img.social {
 }
 
 @media (min-width: 768px) {
-    .container-fluid > .navbar-collapse, 
-    .container-fluid > .navbar-header, 
-    .container > .navbar-collapse, 
-    .container > .navbar-header {
+    .container-fluid>.navbar-collapse,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container>.navbar-header {
         margin-left: 40px;
     }
 }
 
 /*********** Info Panel *************/
+
 .info {
-    background: #536dfe; 
-    color: white; 
+    background: #536dfe;
+    color: white;
     padding-bottom: 30px;
-    overflow-x: hidden;     
+    overflow-x: hidden;
 }
 
 .info h2 {
-    font-weight: 200;
+    font-weight: normal;
     margin-top: 20px;
     text-align: center;
 }
 
 .info hr {
-    border-top: 1px solid rgba(255, 255, 255, 0.5); 
-    margin-bottom: 40px;   
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 40px;
 }
 
 .info p {
-    font-weight: 200;
+    font-weight: normal;
     font-size: 17px;
 }
 
-
-
 /************** Countdown **************/
+
 .divider {
     margin: 0;
-    color: #536dfe; 
-    background: #536dfe; 
-    border-top: 1px solid rgba(255, 255, 255, 0.5); 
-}
-#countdown{
-	font-family: sans-serif;
-	color: #fff;
-	display: inline-block;
-	font-weight: 100;
-	text-align: center;
-	font-size: 30px;
+    color: #536dfe;
+    background: #536dfe;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-#countdown > div{
-	padding: 10px;
-	border-radius: 3px;
-	background: #8c9eff;
-	display: inline-block;
+#countdown {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
 }
 
-#countdown div > span{
-	padding: 15px;
-	border-radius: 3px;
-	background: #536dfe;
-	display: inline-block;
+#countdown>div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #8c9eff;
+    display: inline-block;
 }
 
-.smalltext{
-	padding-top: 5px;
-	font-size: 16px;
+#countdown div>span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #536dfe;
+    display: inline-block;
 }
 
+.smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+}
 
 /************** Cards **************/
+
 .cards {
     background: #536dfe;
     color: white;
-    padding-bottom: 30px;      
+    padding-bottom: 30px;
 }
 
 .card {
@@ -217,14 +219,16 @@ img.social {
 
 .cards h3 {
     font-weight: 400;
-	text-align: center;
+    text-align: center;
     color: white;
     margin-top: 10px;
     margin-bottom: 0px;
     font-size: 20px;
 }
 
-.cards h3.inverse, .cards h4.inverse, .cards h5.inverse {
+.cards h3.inverse,
+.cards h4.inverse,
+.cards h5.inverse {
     color: #536dfe;
 }
 
@@ -234,7 +238,7 @@ img.social {
 
 .cards h4 {
     font-weight: bold;
-	text-align: center;
+    text-align: center;
     color: white;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -243,7 +247,7 @@ img.social {
 
 .cards h5 {
     font-weight: 400;
-	text-align: center;
+    text-align: center;
     color: white;
     margin-top: 2px;
     margin-bottom: 5px;
@@ -251,7 +255,7 @@ img.social {
 }
 
 .cards hr {
-    border-top: 1px solid rgba(83, 109, 254, 0.5); 
+    border-top: 1px solid rgba(83, 109, 254, 0.5);
 }
 
 .cards p {
@@ -262,18 +266,18 @@ img.social {
 .cards .card-image {
     margin-top: 20px;
     width: 40px;
-	height: 40px;
+    height: 40px;
     object-fit: contain;
     display: block;
     margin: 0 auto;
 }
 
-
 /************** Graphic Panel **************/
+
 .graphic {
-    color: #263238; 
-    padding-top: 30px;  
-    padding-bottom: 30px;  
+    color: #263238;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background: white;
 }
 
@@ -282,26 +286,25 @@ img.social {
 }
 
 .graphic h2 {
-    color: #263238; 
+    color: #263238;
 }
 
 .graphic hr {
-    margin-bottom: 5px;   
-    margin-top: 5px;       
-    border-top: 1px solid rgba(83, 109, 254, 0.5); 
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-top: 1px solid rgba(83, 109, 254, 0.5);
 }
 
 .graphic p {
     margin-top: 10px;
 }
 
-
 /************** Process *************/
 
 .process {
     background: rgba(240, 242, 244, 0.45);
     color: #263238;
-    padding-bottom: 30px;      
+    padding-bottom: 30px;
 }
 
 .process h2 {
@@ -312,7 +315,7 @@ img.social {
 
 .process h3 {
     font-weight: 300;
-	text-align: center;
+    text-align: center;
     color: #263238;
     margin-top: 10px;
     margin-bottom: 0px;
@@ -320,14 +323,14 @@ img.social {
 
 .process h4 {
     font-weight: bold;
-	text-align: center;
+    text-align: center;
     color: #78909c;
     margin-top: 2px;
     margin-bottom: 5px;
 }
 
 .process hr {
-    border-top: 1px solid rgba(83, 109, 254, 0.5); 
+    border-top: 1px solid rgba(83, 109, 254, 0.5);
 }
 
 .process p {
@@ -338,7 +341,7 @@ img.social {
 .process .ideation {
     margin-top: 20px;
     width: 50px;
-	height: 50px;
+    height: 50px;
     object-fit: contain;
     display: block;
     margin: 0 auto;
@@ -349,7 +352,7 @@ img.social {
 .economy {
     background: rgba(240, 242, 244, 0.45);
     color: #263238;
-    padding-bottom: 30px;      
+    padding-bottom: 30px;
 }
 
 .economy h2 {
@@ -359,11 +362,226 @@ img.social {
 }
 
 .economy hr {
-    border-top: 1px solid rgba(83, 109, 254, 0.5); 
+    border-top: 1px solid rgba(83, 109, 254, 0.5);
 }
 
 .economy img {
     width: 100%;
+}
+
+/************** ICO DATES *************/
+
+.ico-dates {
+    background: white;
+    color: #263238;
+    padding-bottom: 30px;
+}
+
+.ico-dates h2 {
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ico-dates hr {
+    border-top: 1px solid rgba(83, 109, 254, 0.5);
+}
+
+.panel.ico-dates-panel {
+    background-color: #EEE;
+    border: 1px solid silver;
+    margin: 0 3px 5px;
+    border-radius: 10px;
+    min-height: 200px;
+}
+
+.panel.ico-dates-panel.spl {
+    background-color: #FFF;
+}
+
+.ico-dates-panel h3 {
+    text-align: center;
+    color: #2f363f;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.ico-dates-panel p.ico-date,
+.ico-dates-panel p.ico-bonus {
+    margin-top: 25px;
+}
+
+.ico-dates-panel p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #81878c;
+    text-align: center;
+}
+
+.countdown-clock {
+    text-align: center;
+}
+
+#clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv>div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #eee;
+    display: inline-block;
+}
+
+#clockdiv div>span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #f9f9f9;
+    display: inline-block;
+    color: #444;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+    color: #444;
+}
+
+.countdownDiv {
+    text-align: center;
+}
+
+/************** Flex *************/
+
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.is-flex>[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.is-flex .box {
+    position: static;
+}
+
+.is-flex [class*="col-"] {
+    /*  background: #fff;*/
+}
+
+.row-eq-height {
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display:         flex;
+   }
+
+.row-eq-display {
+   /* @media (max-width: $screen-sm) {
+     display: block !important;
+   } */
+ }
+
+/************** Team *************/
+
+.team {
+    background: rgba(240, 242, 244, 0.45);
+    color: #263238;
+    padding-bottom: 30px;
+}
+
+.team h2 {
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.team hr {
+    border-top: 1px solid rgba(83, 109, 254, 0.5);
+}
+
+.team img {
+    margin: auto;
+}
+
+.team img.img-circle {
+    width: 200px;
+    height: 200px;
+}
+
+.team-panel h3,
+.team-panel h4,
+.team-panel .linkedIn {
+    text-align: center;
+}
+
+.team .description {
+    margin-top: 20px;
+    color: #888;
+    line-height: 22px;
+}
+
+.team .name,
+.team .designation {
+    color: #444;
+}
+
+.team .designation {
+    font-weight: 300;
+}
+
+/************** Advisors *************/
+
+.advisors {
+    background: white;
+    color: #263238;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(83, 109, 254, 0.5);
+}
+
+.advisors h2 {
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.advisors hr {
+    border-top: 1px solid rgba(83, 109, 254, 0.5);
+}
+
+.advisors img {
+    margin: auto;
+}
+
+.advisors img.img-circle {
+    width: 200px;
+    height: 200px;
+}
+
+.advisors-panel {
+    text-align: center;
+}
+
+.advisors .description {
+    margin-top: 20px;
+    color: #888;
+    line-height: 22px;
+}
+
+.advisors .name,
+.advisors .designation {
+    color: #444;
+}
+
+.advisors .designation {
+    font-weight: 300;
 }
 
 /************** Partners *************/
@@ -371,7 +589,7 @@ img.social {
 .partners {
     background: white;
     color: #263238;
-    padding-bottom: 30px;      
+    padding-bottom: 30px;
 }
 
 .partners h2 {
@@ -381,19 +599,20 @@ img.social {
 }
 
 .partners hr {
-    border-top: 1px solid rgba(83, 109, 254, 0.5); 
+    border-top: 1px solid rgba(83, 109, 254, 0.5);
 }
 
 .partners img {
     width: 100%;
 }
 
-/************** Partners *************/
+/************** Press *************/
+
 .press {
     background: white;
     color: #263238;
-    padding-bottom: 30px;  
-    border-bottom: 1px solid rgba(83, 109, 254, 0.5);  
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(83, 109, 254, 0.5);
 }
 
 .press h2 {
@@ -403,12 +622,12 @@ img.social {
 }
 
 .press hr {
-    border-top: 1px solid rgba(83, 109, 254, 0.5); 
+    border-top: 1px solid rgba(83, 109, 254, 0.5);
 }
 
 .press img {
-    display:inline-block;
-    vertical-align:middle;
+    display: inline-block;
+    vertical-align: middle;
     max-width: 100%;
     max-height: 130px;
 }
@@ -417,9 +636,8 @@ img.social {
     min-height: 130px;
 }
 
-
-
 /************ Cap Table *************/
+
 .cap {
     background: white;
     overflow: hidden;
@@ -432,9 +650,8 @@ img.social {
 }
 
 .cap hr {
-    border-top: 1px solid rgba(83, 109, 254, 0.5); 
+    border-top: 1px solid rgba(83, 109, 254, 0.5);
 }
-
 
 .cap table.cap-table {
     margin-top: 20px;
@@ -442,8 +659,8 @@ img.social {
     padding-right: 10px;
 }
 
-.cap thead > tr,
-.cap thead > tr > td {
+.cap thead>tr,
+.cap thead>tr>td {
     text-align: center;
     color: #536dfe;
     font-weight: bold;
@@ -451,40 +668,40 @@ img.social {
     border-bottom: 1px solid #cfd8dc;
 }
 
-.cap tbody > tr > td {
+.cap tbody>tr>td {
     text-align: center;
     color: #263238;
     border-top: 1px solid #cfd8dc;
     border-bottom: 1px solid #cfd8dc;
 }
 
-.cap tbody > tr > td > span {
+.cap tbody>tr>td>span {
     color: #78909c;
     font-weight: bold;
 }
 
-.cap tbody > tr {
+.cap tbody>tr {
     border-bottom: 1px solid #cfd8dc;
 }
 
 .cap td:first-of-type {
     border-left: 1px solid #cfd8dc;
 }
+
 .cap td:last-of-type {
     border-right: 1px solid #cfd8dc;
 }
 
-
-
 /************ Contact *************/
+
 .contact {
-    background: url(../images/background.jpg) no-repeat center center fixed; 
+    background: url(../images/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     color: #263238;
-    padding-bottom: 30px;   
+    padding-bottom: 30px;
 }
 
 .contact h2 {
@@ -495,7 +712,7 @@ img.social {
 }
 
 .contact hr {
-    border-top: 1px solid white; 
+    border-top: 1px solid white;
 }
 
 .contact .btn-submit {
@@ -507,6 +724,7 @@ img.social {
 }
 
 /************** Footer *************/
+
 .footer {
     color: white;
     background: #536dfe;
@@ -523,7 +741,7 @@ img.social {
 .footer .nav-footer {
     line-height: 64px;
     height: 64px;
-    background: #536dfe;    
+    background: #536dfe;
 }
 
 .footer .navbar-nav>li>a {
@@ -537,9 +755,8 @@ img.social {
     background: #536dfe;
 }
 
-
-
 /************** Timeline *************/
+
 .timeline {
     max-width: 640px;
 }
@@ -557,6 +774,7 @@ img.social {
 }
 
 /************** Jumbotron *************/
+
 .headline h1 {
     font-weight: 300;
     font-size: 34px;
@@ -567,16 +785,19 @@ img.social {
     border-left: none;
     position: relative;
     height: 800px;
-  }
-  .no-video .video-container video,
-  .touch .video-container video {
+}
+
+.no-video .video-container video,
+.touch .video-container video {
     display: none;
-  }
-  .no-video .video-container .poster,
-  .touch .video-container .poster {
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
     display: block !important;
-  }
-  .video-container {
+}
+
+.video-container {
     position: relative;
     bottom: 0%;
     left: 0%;
@@ -584,23 +805,26 @@ img.social {
     width: 100%;
     overflow: hidden;
     background: #536dfe;
-  }
-  .video-container .poster img {
+}
+
+.video-container .poster img {
     width: 100%;
     height: 100%;
     bottom: 0;
     position: absolute;
     object-fit: cover;
     object-position: center;
-  }
-  .video-container .filter {
+}
+
+.video-container .filter {
     z-index: 100;
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
-  }
-  .video-container .title-container {
+}
+
+.video-container .title-container {
     z-index: 1000;
     position: absolute;
     top: 15%;
@@ -608,13 +832,15 @@ img.social {
     text-align: center;
     color: #fff;
     padding: 10px;
-  }
-  .video-container .description .inner {
+}
+
+.video-container .description .inner {
     font-size: 1em;
     width: 45%;
     margin: 0 auto;
-  }
-  .video-container .link {
+}
+
+.video-container .link {
     position: absolute;
     bottom: 3em;
     width: 100%;
@@ -622,61 +848,68 @@ img.social {
     z-index: 1001;
     font-size: 2em;
     color: #fff;
-  }
-  .video-container .link a {
+}
+
+.video-container .link a {
     color: #fff;
-  }
-  .video-container video {
+}
+
+.video-container video {
     position: absolute;
     z-index: 0;
     bottom: 0;
-  }
-  .video-container video.fillWidth {
-    width: 100% ;
-  }
+}
 
-  .circle {
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+.circle {
     stroke: #536dfe;
     stroke-dasharray: 650;
     stroke-dashoffset: 650;
     -webkit-transition: all 0.5s ease-in-out;
     opacity: 0.3;
-  }
-  
-  .play-button {
+}
+
+.play-button {
     display: inline-block;
     -webkit-transition: all 0.5s ease;
-  }
-  .play-button .triangle {
+}
+
+.play-button .triangle {
     -webkit-transition: all 0.7s ease-in-out;
     stroke-dasharray: 240;
     stroke-dashoffset: 480;
     stroke: #536dfe;
     transform: translateY(0);
-  }
-  .play-button:hover .triangle {
+}
+
+.play-button:hover .triangle {
     stroke-dashoffset: 0;
     opacity: 1;
     stroke: #536dfe;
     animation: nudge 0.7s ease-in-out;
-  }
-  @keyframes nudge {
+}
+
+@keyframes nudge {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
     30% {
-      transform: translateX(-5px);
+        transform: translateX(-5px);
     }
     50% {
-      transform: translateX(5px);
+        transform: translateX(5px);
     }
     70% {
-      transform: translateX(-2px);
+        transform: translateX(-2px);
     }
     100% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
+}
+
 .play-button:hover .circle {
     stroke-dashoffset: 0;
     opacity: 1;
