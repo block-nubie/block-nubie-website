@@ -31,6 +31,9 @@ $(document).ready(function () {
 			eventLabel: 'Public PreSale Campaign'
 		});
 	});
+    
+    $('.panel').matchHeight();
+    $('.panel-body').matchHeight();
 
 });
 
