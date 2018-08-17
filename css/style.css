@@ -476,19 +476,6 @@ img.social {
     /*  background: #fff;*/
 }
 
-.row-eq-height {
-     display: -webkit-box;
-     display: -webkit-flex;
-     display: -ms-flexbox;
-     display:         flex;
-   }
-
-.row-eq-display {
-   /* @media (max-width: $screen-sm) {
-     display: block !important;
-   } */
- }
-
 @media only screen and (max-width : 767px) {
   .panel,panel-body {
     height: auto !important;
