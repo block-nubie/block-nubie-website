@@ -5,10 +5,8 @@ $(document).ready(function () {
 	})
 
 	var deadline = new Date(Date.parse('02/28/2019'));
-	// initializeClock('countdown', deadline);
-
-	// var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-  	initializeClock('clockdiv', deadline);
+	  initializeClock('clockdiv', deadline);
+	  controlPanelSize();
 
 	$('.whitelist').click(function () {
 		dataLayer.push({ 'event': 'Whitelist Click' });
@@ -32,8 +30,13 @@ $(document).ready(function () {
 		});
 	});
     
-    $('.panel').matchHeight();
-    $('.panel-body').matchHeight();
+    $('#playVideo').addClass('active');
+    setTimeout(function () {
+        $('#playVideo').removeClass('active');
+    },3000)
+    
+    // $('.panel').matchHeight();
+    // $('.panel-body').matchHeight();
 
 });
 
@@ -135,6 +138,40 @@ function getTimeRemaining(endtime) {
   
 	updateClock();
 	var timeinterval = setInterval(updateClock, 1000);
+  }
+
+  function controlPanelSize() {
+	var showChar = 200;
+	var ellipsestext = "...";
+	var moretext = "more";
+	var lesstext = "less";
+	$('.more').each(function() {
+		var content = $(this).html();
+
+		if(content.length > showChar) {
+
+			var c = content.substr(0, showChar);
+			var h = content.substr(showChar, content.length - showChar);
+
+			var html = c + '<span class="moreelipses">'+ellipsestext+'</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">'+moretext+'</a></span>';
+
+			$(this).html(html);
+		}
+
+	});
+
+	$(".morelink").click(function(){
+		if($(this).hasClass("less")) {
+			$(this).removeClass("less");
+			$(this).html(moretext);
+		} else {
+			$(this).addClass("less");
+			$(this).html(lesstext);
+		}
+		$(this).parent().prev().toggle();
+		$(this).prev().toggle();
+		return false;
+	});
   }
   
   
