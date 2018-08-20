@@ -36,7 +36,7 @@ $(document).ready(function () {
     },3000)
     
     // $('.panel').matchHeight();
-    // $('.panel-body').matchHeight();
+    //  $('.panel-body').matchHeight();
 
 });
 
@@ -170,6 +170,7 @@ function getTimeRemaining(endtime) {
 		}
 		$(this).parent().prev().toggle();
 		$(this).prev().toggle();
+		//  $('.panel-body').matchHeight();
 		return false;
 	});
   }
