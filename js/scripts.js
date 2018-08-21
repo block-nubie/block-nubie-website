@@ -5,11 +5,13 @@ $(document).ready(function () {
 	})
 
 	var deadline = new Date(Date.parse('02/28/2019'));
-	  initializeClock('clockdiv', deadline);
-	  controlPanelSize();
+	initializeClock('clockdiv', deadline);
+	controlPanelSize();
 
 	$('.whitelist').click(function () {
-		dataLayer.push({ 'event': 'Whitelist Click' });
+		dataLayer.push({
+			'event': 'Whitelist Click'
+		});
 
 		ga('send', {
 			hitType: 'event',
@@ -20,7 +22,9 @@ $(document).ready(function () {
 	});
 
 	$('.whitepaper').click(function () {
-		dataLayer.push({ 'event': 'Whitepaper Download' });
+		dataLayer.push({
+			'event': 'Whitepaper Download'
+		});
 
 		ga('send', {
 			hitType: 'event',
@@ -29,14 +33,13 @@ $(document).ready(function () {
 			eventLabel: 'Public PreSale Campaign'
 		});
 	});
-    
-    $('#playVideo').addClass('active');
-    setTimeout(function () {
-        $('#playVideo').removeClass('active');
-    },3000)
-    
-    // $('.panel').matchHeight();
-    //  $('.panel-body').matchHeight();
+
+	$('#playVideo').addClass('active');
+	setTimeout(function () {
+		$('#playVideo').removeClass('active');
+	}, 3000);
+
+	document.getElementById('next').value = window.location;
 
 });
 
@@ -87,11 +90,17 @@ function scaleBannerVideoSize(element) {
 		if (videoAspectRatio > windowAspectRatio) {
 			videoWidth = windowWidth;
 			videoHeight = videoWidth * videoAspectRatio;
-			$(this).css({ 'top': -(videoHeight - windowHeight) / 2 + 'px', 'margin-left': 0 });
+			$(this).css({
+				'top': -(videoHeight - windowHeight) / 2 + 'px',
+				'margin-left': 0
+			});
 		} else {
 			videoHeight = windowHeight;
 			videoWidth = videoHeight / videoAspectRatio;
-			$(this).css({ 'margin-top': 0, 'margin-left': -(videoWidth - windowWidth) / 2 + 'px' });
+			$(this).css({
+				'margin-top': 0,
+				'margin-left': -(videoWidth - windowWidth) / 2 + 'px'
+			});
 		}
 
 		$(this).width(videoWidth).height(videoHeight);
@@ -108,60 +117,60 @@ function getTimeRemaining(endtime) {
 	var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
 	var days = Math.floor(t / (1000 * 60 * 60 * 24));
 	return {
-	  'total': t,
-	  'days': days,
-	  'hours': hours,
-	  'minutes': minutes,
-	  'seconds': seconds
+		'total': t,
+		'days': days,
+		'hours': hours,
+		'minutes': minutes,
+		'seconds': seconds
 	};
-  }
-  
-  function initializeClock(id, endtime) {
+}
+
+function initializeClock(id, endtime) {
 	var clock = document.getElementById(id);
 	var daysSpan = clock.querySelector('.days');
 	var hoursSpan = clock.querySelector('.hours');
 	var minutesSpan = clock.querySelector('.minutes');
 	var secondsSpan = clock.querySelector('.seconds');
-  
+
 	function updateClock() {
-	  var t = getTimeRemaining(endtime);
-  
-	  daysSpan.innerHTML = t.days;
-	  hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-	  minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-	  secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-  
-	  if (t.total <= 0) {
-		clearInterval(timeinterval);
-	  }
+		var t = getTimeRemaining(endtime);
+
+		daysSpan.innerHTML = t.days;
+		hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+		minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+		secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+		if (t.total <= 0) {
+			clearInterval(timeinterval);
+		}
 	}
-  
+
 	updateClock();
 	var timeinterval = setInterval(updateClock, 1000);
-  }
+}
 
-  function controlPanelSize() {
+function controlPanelSize() {
 	var showChar = 200;
 	var ellipsestext = "...";
 	var moretext = "more";
 	var lesstext = "less";
-	$('.more').each(function() {
+	$('.more').each(function () {
 		var content = $(this).html();
 
-		if(content.length > showChar) {
+		if (content.length > showChar) {
 
 			var c = content.substr(0, showChar);
 			var h = content.substr(showChar, content.length - showChar);
 
-			var html = c + '<span class="moreelipses">'+ellipsestext+'</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">'+moretext+'</a></span>';
+			var html = c + '<span class="moreelipses">' + ellipsestext + '</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
 
 			$(this).html(html);
 		}
 
 	});
 
-	$(".morelink").click(function(){
-		if($(this).hasClass("less")) {
+	$(".morelink").click(function () {
+		if ($(this).hasClass("less")) {
 			$(this).removeClass("less");
 			$(this).html(moretext);
 		} else {
@@ -173,6 +182,4 @@ function getTimeRemaining(endtime) {
 		//  $('.panel-body').matchHeight();
 		return false;
 	});
-  }
-  
-  
+}
