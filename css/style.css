@@ -212,7 +212,7 @@ img.social {
 }
 
 .cards h2 {
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 20px;
     text-align: center;
 }
@@ -308,7 +308,7 @@ img.social {
 }
 
 .process h2 {
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 20px;
     text-align: center;
 }
@@ -356,7 +356,7 @@ img.social {
 }
 
 .economy h2 {
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 20px;
     text-align: center;
 }
@@ -382,7 +382,7 @@ img.social {
 }
 
 .ico-dates h2 {
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 20px;
     text-align: center;
 }
@@ -442,6 +442,15 @@ img.social {
     display: inline-block;
 }
 
+@media screen and (max-width: 640px) {
+    #clockdiv>div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #eee;
+    display: table-cell;
+}
+}
+
 #clockdiv div>span {
     padding: 15px;
     border-radius: 3px;
@@ -495,7 +504,7 @@ img.social {
 }
 
 .team h2 {
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 20px;
     text-align: center;
 }
@@ -556,7 +565,7 @@ img.social {
 }
 
 .advisors h2 {
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 20px;
     text-align: center;
 }
@@ -620,6 +629,7 @@ img.social {
 .advisors .linkedIn {
     bottom: 15px;
     text-align: center;
+    padding-bottom: 10px
 }
 
 /************** Partners *************/
@@ -631,7 +641,7 @@ img.social {
 }
 
 .partners h2 {
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 20px;
     text-align: center;
 }
@@ -654,7 +664,7 @@ img.social {
 }
 
 .press h2 {
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 20px;
     text-align: center;
 }
@@ -682,7 +692,7 @@ img.social {
 }
 
 .cap h2 {
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 20px;
     text-align: center;
 }
@@ -743,7 +753,7 @@ img.social {
 }
 
 .contact h2 {
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 20px;
     text-align: center;
     color: white;
@@ -1230,68 +1240,4 @@ a.morelink {
 .timeline {
     --timelineMainColor: #536dfe;
     font-size: 16px;
-}
-
-/*
-* demo page
-*/
-
-p {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
-}
-
-p:last-child {
-    margin-bottom: 0;
-}
-
-.page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.page__demo {
-    flex-grow: 1;
-}
-
-.main-container {
-    max-width: 960px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.page__container {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    max-width: 800px;
-}
-
-.footer {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    font-size: 1.4rem;
-}
-
-.footer__link {
-    text-decoration: none;
-    color: inherit;
-}
-
-@media screen and (min-width: 361px) {
-    .footer__container {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .melnik909 {
-        display: none;
-    }
 }
