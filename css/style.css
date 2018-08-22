@@ -553,6 +553,7 @@ img.social {
 
 .team .designation {
     font-weight: 300;
+    height: 30px;
 }
 
 /************** Advisors *************/
@@ -624,6 +625,7 @@ img.social {
 
 .advisors .designation {
     font-weight: 300;
+    height: 30px;
 }
 
 .advisors .linkedIn {
