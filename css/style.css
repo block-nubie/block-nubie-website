@@ -463,17 +463,17 @@ img.social {
 
 /************** Flex *************/
 .row.is-flex {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 .row.is-flex>[class*='col-'] {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .is-flex .box {
-    position: static;
+    /* position: static; */
 }
 
 .is-flex [class*="col-"] {
