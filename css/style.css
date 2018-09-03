@@ -522,8 +522,18 @@ img.social {
 
 .team .panel-default {
     min-height: 500px;
+    position: relative;
 }
 
+.team .panel-body {
+    margin-bottom: 30px;
+}
+
+/* @media screen and (min-width: 1024px) {
+    .team .panel-default {
+        min-height: 535px;
+    }
+} */
 .team-panel .linkedIn {
     bottom: 15px;
     text-align: center;
@@ -596,6 +606,11 @@ img.social {
     position: relative;
 }
 
+/* @media screen and (min-width: 1024px) {
+    .advisors .panel-default {
+        min-height: 535px;
+    }
+} */
 .advisors .panel-body {
     margin-bottom: 30px;
 }
@@ -790,13 +805,19 @@ img.social {
 
 /************** Jumbotron *************/
 .headline h1 {
-    font-weight: 300;
-    font-size: 34px;
+    font-weight: 900;
+    /* font-size: 34px; */
+    /* margin: 0; */
+    font-size: 3rem;
+    white-space: nowrap;
 }
 
 .headline h2 {
-    font-weight: 200;
-    font-size: 26px;
+    font-weight: 700;
+    /* font-size: 34px; */
+    /* margin: 0; */
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .homepage-hero-module {

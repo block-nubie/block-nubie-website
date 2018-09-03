@@ -150,6 +150,7 @@ function initializeClock(id, endtime) {
 }
 
 function controlPanelSize() {
+	var showCharText = 50;
 	var showChar = 200;
 	var ellipsestext = "...";
 	var moretext = "more";
@@ -163,6 +164,20 @@ function controlPanelSize() {
 			var h = content.substr(showChar, content.length - showChar);
 
 			var html = c + '<span class="moreelipses">' + ellipsestext + '</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+			$(this).html(html);
+		}
+
+	});
+	$('.moreText').each(function () {
+		var content = $(this).html();
+
+		if (content.length > showCharText) {
+
+			var c = content.substr(0, showCharText);
+			var h = content.substr(showCharText, content.length - showCharText);
+
+			var html = c + '<span class="moreelipses">' + ellipsestext + '</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" style="color: #eee" class="morelink">' + moretext + '</a></span>';
 
 			$(this).html(html);
 		}
