@@ -33,7 +33,6 @@ body {
 }
 
 /******** Navigation  ***********/
-
 .navbar {
     background: #ffffff;
     color: #536dfe;
@@ -75,7 +74,6 @@ img.social {
 }
 
 /********* Structural ***********/
-
 .no-padding {
     padding: 0 !important;
 }
@@ -121,6 +119,7 @@ img.social {
 }
 
 @media (min-width: 768px) {
+
     .container-fluid>.navbar-collapse,
     .container-fluid>.navbar-header,
     .container>.navbar-collapse,
@@ -130,7 +129,6 @@ img.social {
 }
 
 /*********** Info Panel *************/
-
 .info {
     background: #536dfe;
     color: white;
@@ -155,7 +153,6 @@ img.social {
 }
 
 /************** Countdown **************/
-
 .divider {
     margin: 0;
     color: #536dfe;
@@ -192,7 +189,6 @@ img.social {
 }
 
 /************** Cards **************/
-
 .cards {
     background: #536dfe;
     color: white;
@@ -273,7 +269,6 @@ img.social {
 }
 
 /************** Graphic Panel **************/
-
 .graphic {
     color: #263238;
     padding-top: 30px;
@@ -300,7 +295,6 @@ img.social {
 }
 
 /************** Process *************/
-
 .process {
     background: rgba(240, 242, 244, 0.45);
     color: #263238;
@@ -348,7 +342,6 @@ img.social {
 }
 
 /************** Economy *************/
-
 .economy {
     background: rgba(240, 242, 244, 0.45);
     color: #263238;
@@ -370,15 +363,14 @@ img.social {
 }
 
 /************** ICO DATES *************/
-
 .ico-dates {
-    background: white;
+    background: rgba(240, 242, 244, 0.45);
     color: #263238;
-    padding-bottom: 30px;
+    padding-bottom: 130px;
 }
 
 .row.milestone {
-    padding-bottom: 45px;
+    padding-bottom: 60px;
 }
 
 .ico-dates h2 {
@@ -444,11 +436,11 @@ img.social {
 
 @media screen and (max-width: 640px) {
     #clockdiv>div {
-    padding: 10px;
-    border-radius: 3px;
-    background: #eee;
-    display: table-cell;
-}
+        padding: 10px;
+        border-radius: 3px;
+        background: #eee;
+        display: table-cell;
+    }
 }
 
 #clockdiv div>span {
@@ -470,7 +462,6 @@ img.social {
 }
 
 /************** Flex *************/
-
 .row.is-flex {
     display: flex;
     flex-wrap: wrap;
@@ -494,9 +485,7 @@ img.social {
     padding-bottom: 45px;
 }
 */
-
 /************** Team *************/
-
 .team {
     background: rgba(240, 242, 244, 0.45);
     color: #263238;
@@ -557,7 +546,6 @@ img.social {
 }
 
 /************** Advisors *************/
-
 .advisors {
     background: white;
     color: #263238;
@@ -635,7 +623,6 @@ img.social {
 }
 
 /************** Partners *************/
-
 .partners {
     background: white;
     color: #263238;
@@ -657,7 +644,6 @@ img.social {
 }
 
 /************** Press *************/
-
 .press {
     background: white;
     color: #263238;
@@ -687,7 +673,6 @@ img.social {
 }
 
 /************ Cap Table *************/
-
 .cap {
     background: white;
     overflow: hidden;
@@ -743,7 +728,6 @@ img.social {
 }
 
 /************ Contact *************/
-
 .contact {
     background: url(../images/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -774,7 +758,6 @@ img.social {
 }
 
 /************** Footer *************/
-
 .footer {
     color: white;
     background: #536dfe;
@@ -806,10 +789,14 @@ img.social {
 }
 
 /************** Jumbotron *************/
-
 .headline h1 {
     font-weight: 300;
     font-size: 34px;
+}
+
+.headline h2 {
+    font-weight: 200;
+    font-size: 26px;
 }
 
 .homepage-hero-module {
@@ -928,15 +915,19 @@ img.social {
     0% {
         transform: translateX(0);
     }
+
     30% {
         transform: translateX(-5px);
     }
+
     50% {
         transform: translateX(5px);
     }
+
     70% {
         transform: translateX(-2px);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -948,7 +939,6 @@ img.social {
 }
 
 /************** Card Hover *************/
-
 .cover-card {
     /*	border: 2px solid white;*/
     background: transparent;
@@ -980,7 +970,6 @@ img.social {
 }
 
 /************** Equal Panels *************/
-
 .comment {
     /* width: 400px;
 	background-color: #f0f0f0;
@@ -997,7 +986,6 @@ a.morelink {
 }
 
 /************** Timeline *************/
-
 .main-timeline-section {
     position: relative;
     width: 100%;
@@ -1047,7 +1035,7 @@ a.morelink {
 }
 
 .timeline-article .meta-date {
-    padding-top: 10px;
+    /*    padding-top: 10px;*/
     color: floralwhite;
     position: absolute;
     top: 50%;
@@ -1059,6 +1047,7 @@ a.morelink {
     font-size: 16px;
     font-weight: bolder;
     border: 0px solid #536dfe;
+    text-align: center;
 }
 
 .timeline-article .content-box {
@@ -1072,7 +1061,8 @@ a.morelink {
     left: -80px;
     padding: 10px;
     margin-top: 10px;
-    min-height: 150px
+    min-height: 150px;
+    margin-left: 12px;
 }
 
 .timeline-article .content-box-empty {
@@ -1101,6 +1091,10 @@ a.morelink {
     top: -16%;
 }
 
+.timeline-article-bottom .content-box.top {
+    top: -26%;
+}
+
 .timeline-article-bottom .content-box-empty {
     top: 0%;
 }
@@ -1116,7 +1110,6 @@ a.morelink {
 }
 
 /************** Timeline Mobile *************/
-
 .timeline {
     --uiTimelineMainColor: var(--timelineMainColor, #222);
     --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
@@ -1204,16 +1197,20 @@ a.morelink {
     .timeline:before {
         left: 30px;
     }
+
     .timeline__group {
         padding-top: 55px;
     }
+
     .timeline__box {
         padding-left: 80px;
     }
+
     .timeline__box:before {
         top: 50%;
         transform: translateY(-50%);
     }
+
     .timeline__date {
         top: 50%;
         margin-top: -27px;
@@ -1224,16 +1221,20 @@ a.morelink {
     .timeline:before {
         left: 0;
     }
+
     .timeline__group {
         padding-top: 40px;
     }
+
     .timeline__box {
         padding-left: 20px;
         padding-top: 70px;
     }
+
     .timeline__box:before {
         top: 90px;
     }
+
     .timeline__date {
         top: 0;
     }

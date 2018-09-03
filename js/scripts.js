@@ -4,8 +4,8 @@ $(document).ready(function () {
 		$("#iframeYoutube").attr("src", "#");
 	})
 
-	var deadline = new Date(Date.parse('02/28/2019'));
-	initializeClock('clockdiv', deadline);
+	// var deadline = new Date(Date.parse('02/28/2019'));
+	// initializeClock('clockdiv', deadline);
 	controlPanelSize();
 
 	$('.whitelist').click(function () {
